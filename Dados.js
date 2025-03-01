@@ -35,3 +35,19 @@ clienteMaria.definirTelefone = telefoneMaria2;
 empresaCr.definirCliente = clienteMaria;
 
 const enderecoRuth = new Endereco("SP", "Jacarei", "Rua dos jacarés", 2222);
+const telefoneRuth1 = new Telefone(12, 77772222);
+const telefoneRuth2 = new Telefone(12, 34345656);
+const clienteRuth = new Cliente("Ruth", "222.666.888.30", enderecoRuth);
+clienteRuth.definirTelefone = telefoneRuth1;
+clienteRuth.definirTelefone = telefoneRuth2;
+empresaCr.definirCliente = clienteRuth;
+
+const enderecoJoana = new Endereco("SP", "Aparecida", "Av. do Romeiro", 777);
+const telefoneJoana1 = new Telefone(12, 43219876);
+const telefoneJoana2 = new Telefone(12, 34569821);
+const clienteJoana = new Cliente("Joana", "123.789.432-20", enderecoJoana);
+clienteJoana.definirTelefone = telefoneJoana1;
+clienteJoana.definirTelefone = telefoneJoana2;
+empresaCr.definirCliente = clienteJoana;
+
+console.log(empresaCr.detalhe());
